@@ -1,0 +1,135 @@
+2018-06-17 13:15:06 Error: [Cake\View\Exception\MissingTemplateException] Template file "Articles/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Articles/index.ctp',
+)
+Request URL: /articles/index
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/View/View.php(799): Cake\View\View->_getViewFileName('Articles/index')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Controller/Controller.php(777): Cake\View\View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ArticlesController))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /Applications/XAMPP/xamppfiles/htdocs/cms/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-06-17 13:15:29 Error: [Cake\View\Exception\MissingTemplateException] Template file "Articles/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Articles/index.ctp',
+)
+Request URL: /articles/index
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/View/View.php(799): Cake\View\View->_getViewFileName('Articles/index')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Controller/Controller.php(777): Cake\View\View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ArticlesController))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /Applications/XAMPP/xamppfiles/htdocs/cms/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-06-17 13:16:57 Error: [Cake\Controller\Exception\MissingActionException] Action ArticlesController::view() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'view',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /articles/view/first-post
+Referer URL: http://localhost:8765/articles/index
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ArticlesController))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /Applications/XAMPP/xamppfiles/htdocs/cms/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-17 13:18:30 Error: [Cake\View\Exception\MissingTemplateException] Template file "Articles/view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Articles/view.ctp',
+)
+Request URL: /articles/view/first-post
+Referer URL: http://localhost:8765/articles/index
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/View/View.php(799): Cake\View\View->_getViewFileName('Articles/view')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Controller/Controller.php(777): Cake\View\View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ArticlesController))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /Applications/XAMPP/xamppfiles/htdocs/cms/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-06-17 13:20:09 Error: [Cake\Controller\Exception\MissingActionException] Action ArticlesController::edit() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'edit',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /articles/edit/first-post
+Referer URL: http://localhost:8765/articles/view/first-post
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ArticlesController))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /Applications/XAMPP/xamppfiles/htdocs/cms/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+

@@ -261,3 +261,53 @@ Stack Trace:
 #18 {main}
 
 
+2018-06-19 15:19:17 Error: [TypeError] Argument 1 passed to App\Model\Table\ArticlesTable::findTagged() must be an instance of App\Model\Table\Query, instance of Cake\ORM\Query given, called in /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/ORM/Table.php on line 2393
+Request URL: /articles/tagged
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/ORM/Table.php(2393): App\Model\Table\ArticlesTable->findTagged(Object(Cake\ORM\Query), Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/ORM/Table.php(1350): Cake\ORM\Table->callFinder('tagged', Object(Cake\ORM\Query), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cms/src/Controller/ArticlesController.php(99): Cake\ORM\Table->find('tagged', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Controller/Controller.php(596): App\Controller\ArticlesController->tags()
+#4 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ArticlesController))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /Applications/XAMPP/xamppfiles/htdocs/cms/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-06-21 07:51:06 Error: [TypeError] Argument 1 passed to App\Model\Table\ArticlesTable::findTagged() must be an instance of App\Model\Table\Query, instance of Cake\ORM\Query given, called in /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/ORM/Table.php on line 2393
+Request URL: /articles/tagged
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/ORM/Table.php(2393): App\Model\Table\ArticlesTable->findTagged(Object(Cake\ORM\Query), Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/ORM/Table.php(1350): Cake\ORM\Table->callFinder('tagged', Object(Cake\ORM\Query), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cms/src/Controller/ArticlesController.php(99): Cake\ORM\Table->find('tagged', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Controller/Controller.php(596): App\Controller\ArticlesController->tags()
+#4 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ArticlesController))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /Applications/XAMPP/xamppfiles/htdocs/cms/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+

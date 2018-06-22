@@ -349,3 +349,107 @@ Stack Trace:
 #31 {main}
 
 
+2018-06-22 14:12:45 Error: [ParseError] syntax error, unexpected '{', expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /users
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/Applications/X...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Model\\Entit...')
+#2 [internal function]: spl_autoload_call('App\\Model\\Entit...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/ORM/Table.php(778): class_exists('App\\Model\\Entit...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/ORM/Table.php(2925): Cake\ORM\Table->getEntityClass()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Debugger.php(606): Cake\ORM\Table->__debugInfo()
+#6 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Debugger.php(530): Cake\Error\Debugger::_object(Object(App\Model\Table\UsersTable), 1, 2)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Debugger.php(571): Cake\Error\Debugger::_export(Object(App\Model\Table\UsersTable), 2, 1)
+#8 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Debugger.php(606): Cake\Error\Debugger::_array(Array, 2, 1)
+#9 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Debugger.php(530): Cake\Error\Debugger::_object(Object(Cake\ORM\Query), 3, 1)
+#10 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Debugger.php(495): Cake\Error\Debugger::_export(Object(Cake\ORM\Query), 4, 0)
+#11 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Template/Element/exception_stack_trace.ctp(37): Cake\Error\Debugger::exportVar(Object(Cake\ORM\Query), 4)
+#12 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/View/View.php(1240): include('/Applications/X...')
+#13 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/View/View.php(1201): Cake\View\View->_evaluate('/Applications/X...', Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/View/View.php(1598): Cake\View\View->_render('/Applications/X...', Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/View/View.php(706): Cake\View\View->_renderElement('/Applications/X...', Array, Array)
+#16 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Template/Layout/dev_error.ctp(220): Cake\View\View->element('exception_stack...')
+#17 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/View/View.php(1240): include('/Applications/X...')
+#18 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/View/View.php(1201): Cake\View\View->_evaluate('/Applications/X...', Array)
+#19 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/View/View.php(850): Cake\View\View->_render('/Applications/X...')
+#20 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/View/View.php(808): Cake\View\View->renderLayout('', 'dev_error')
+#21 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Controller/Controller.php(777): Cake\View\View->render('error500', NULL)
+#22 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(329): Cake\Controller\Controller->render('error500')
+#23 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(338): Cake\Error\ExceptionRenderer->_outputMessage('error500')
+#24 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(205): Cake\Error\ExceptionRenderer->_outputMessage('parseError')
+#25 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(118): Cake\Error\ExceptionRenderer->render()
+#26 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Error\Middleware\ErrorHandlerMiddleware->handleException(Object(ParseError), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#32 /Applications/XAMPP/xamppfiles/htdocs/cms/webroot/index.php(40): Cake\Http\Server->run()
+#33 {main}
+
+
+2018-06-22 14:13:23 Error: [ParseError] syntax error, unexpected '{', expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /users
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/Applications/X...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Model\\Entit...')
+#2 [internal function]: spl_autoload_call('App\\Model\\Entit...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/ORM/Table.php(778): class_exists('App\\Model\\Entit...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/ORM/Table.php(2925): Cake\ORM\Table->getEntityClass()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Debugger.php(606): Cake\ORM\Table->__debugInfo()
+#6 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Debugger.php(530): Cake\Error\Debugger::_object(Object(App\Model\Table\UsersTable), 1, 2)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Debugger.php(571): Cake\Error\Debugger::_export(Object(App\Model\Table\UsersTable), 2, 1)
+#8 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Debugger.php(606): Cake\Error\Debugger::_array(Array, 2, 1)
+#9 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Debugger.php(530): Cake\Error\Debugger::_object(Object(Cake\ORM\Query), 3, 1)
+#10 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Debugger.php(495): Cake\Error\Debugger::_export(Object(Cake\ORM\Query), 4, 0)
+#11 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Template/Element/exception_stack_trace.ctp(37): Cake\Error\Debugger::exportVar(Object(Cake\ORM\Query), 4)
+#12 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/View/View.php(1240): include('/Applications/X...')
+#13 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/View/View.php(1201): Cake\View\View->_evaluate('/Applications/X...', Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/View/View.php(1598): Cake\View\View->_render('/Applications/X...', Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/View/View.php(706): Cake\View\View->_renderElement('/Applications/X...', Array, Array)
+#16 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Template/Layout/dev_error.ctp(220): Cake\View\View->element('exception_stack...')
+#17 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/View/View.php(1240): include('/Applications/X...')
+#18 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/View/View.php(1201): Cake\View\View->_evaluate('/Applications/X...', Array)
+#19 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/View/View.php(850): Cake\View\View->_render('/Applications/X...')
+#20 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/View/View.php(808): Cake\View\View->renderLayout('', 'dev_error')
+#21 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Controller/Controller.php(777): Cake\View\View->render('error500', NULL)
+#22 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(329): Cake\Controller\Controller->render('error500')
+#23 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(338): Cake\Error\ExceptionRenderer->_outputMessage('error500')
+#24 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(205): Cake\Error\ExceptionRenderer->_outputMessage('parseError')
+#25 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(118): Cake\Error\ExceptionRenderer->render()
+#26 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Error\Middleware\ErrorHandlerMiddleware->handleException(Object(ParseError), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#32 /Applications/XAMPP/xamppfiles/htdocs/cms/webroot/index.php(40): Cake\Http\Server->run()
+#33 {main}
+
+
+2018-06-22 14:13:28 Error: [Cake\View\Exception\MissingTemplateException] Template file "Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/View/View.php(799): Cake\View\View->_getViewFileName('Users/index')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Controller/Controller.php(777): Cake\View\View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /Applications/XAMPP/xamppfiles/htdocs/cms/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+

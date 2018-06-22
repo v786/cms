@@ -30,5 +30,3 @@ Router::scope('/', function ($routes) {
     // Connect the conventions based default routes.
     $routes->fallbacks();
 });
-
-Plugin::routes();

@@ -311,3 +311,41 @@ Stack Trace:
 #19 {main}
 
 
+2018-06-22 13:46:06 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Python-Binding-and-Development-of-tutorials-in-Jupyter-interface' for key 'slug'
+Request URL: /articles/add
+Referer URL: http://localhost:8765/articles/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Database/Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Database/Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Database/Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/ORM/Table.php(2102): Cake\Database\Query->execute()
+#8 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/ORM/Table.php(1996): Cake\ORM\Table->_insert(Object(App\Model\Entity\Article), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/ORM/Table.php(1909): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Article), Object(ArrayObject))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/ORM/Table.php(1624): Cake\ORM\Table->Cake\ORM\{closure}()
+#11 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Database/Connection.php(726): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#12 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/ORM/Table.php(1625): Cake\Database\Connection->transactional(Object(Closure))
+#13 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/ORM/Table.php(1910): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#14 /Applications/XAMPP/xamppfiles/htdocs/cms/src/Controller/ArticlesController.php(41): Cake\ORM\Table->save(Object(App\Model\Entity\Article))
+#15 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Controller/Controller.php(596): App\Controller\ArticlesController->add()
+#16 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#17 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ArticlesController))
+#18 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 /Applications/XAMPP/xamppfiles/htdocs/cms/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 /Applications/XAMPP/xamppfiles/htdocs/cms/webroot/index.php(40): Cake\Http\Server->run()
+#31 {main}
+
+
